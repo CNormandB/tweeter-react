@@ -1,6 +1,11 @@
 function TweetForm() {
   const catchphrase = "What are you humming about?"
   
+  const handleSubmit = (event) => {
+    event.preventdefault();
+    TweetForm.onClick()
+    };
+
   return (
     <main className='container'>
       <section className="newtweet">
